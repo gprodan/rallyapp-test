@@ -7,4 +7,112 @@ components:
   properties: {col_widths: '{}'}
   name: column_panel_1
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: ddCurrency
+    properties:
+      items: ['[''RON'', ''EUR'',''USD'']']
+      placeholder: currency
+    type: DropDown
+    layout_properties: {grid_position: 'WFIOHN,DOKRHG YAYOLQ,VQHFMF'}
+    data_bindings:
+    - {property: items, code: '', writeback: false}
+    event_bindings: {change: ddCurrency_change}
+  - name: label_2
+    properties: {text: Cost gas}
+    type: Label
+    layout_properties: {grid_position: 'WFIOHN,DOKRHG JIWZWV,ZCLPPU'}
+  - name: label_3
+    properties: {text: Cost oil}
+    type: Label
+    layout_properties: {grid_position: 'WFIOHN,DOKRHG XAMZNA,FVCDYM'}
+  - name: label_4
+    properties: {text: Cost electricity}
+    type: Label
+    layout_properties: {grid_position: 'WFIOHN,DOKRHG PPKXFH,YFDGBM'}
+  - name: label_5
+    properties: {text: 'M2
+
+        '}
+    type: Label
+    layout_properties: {grid_position: 'WFIOHN,DOKRHG WKMXZZ,DJOFAK'}
+  - name: label_6
+    properties: {text: Salary}
+    type: Label
+    layout_properties: {grid_position: 'WFIOHN,DOKRHG GBULIF,HEXDKX'}
+  - name: label_7
+    properties: {text: Select currency}
+    type: Label
+    layout_properties: {grid_position: 'WFIOHN,GXHAVJ TOJWNX,KBQBZP'}
+  - name: costGas
+    properties: {placeholder: cost gas in euros, text: '0'}
+    type: TextBox
+    layout_properties: {grid_position: 'WFIOHN,GXHAVJ SZLQYG,XDUTQI'}
+    event_bindings: {pressed_enter: costGas_pressed_enter}
+  - name: costOil
+    properties: {placeholder: Cost oil in euros, text: '0'}
+    type: TextBox
+    layout_properties: {grid_position: 'WFIOHN,GXHAVJ ISGAKY,ORMUZX'}
+  - name: text_box_1
+    properties: {placeholder: Cost electricity in euros}
+    type: TextBox
+    layout_properties: {grid_position: 'WFIOHN,GXHAVJ ERSRHI,EWDSTO'}
+  - name: text_box_2
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'WFIOHN,GXHAVJ MSXJCV,NHKWKP'}
+  - name: text_box_3
+    properties: {placeholder: salary in euros}
+    type: TextBox
+    layout_properties: {grid_position: 'WFIOHN,GXHAVJ GZTPEQ,BTLRWY'}
+  - name: btnCalculate
+    properties: {text: Calculate}
+    type: Button
+    layout_properties: {grid_position: 'ELTWZS,CZDJHE'}
+    event_bindings: {click: btnCalculate_click}
+  - name: label_8
+    properties: {}
+    type: Label
+    layout_properties: {grid_position: 'OHRQNA,HIPLJF'}
+  - name: text_area_1
+    properties: {}
+    type: TextArea
+    layout_properties: {grid_position: 'VEDCVZ,UIUYGD'}
+- name: column_panel_2
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {slot: left-nav}
+  components:
+  - name: label_1
+    properties: {text: Activities}
+    type: Label
+    layout_properties: {grid_position: 'JLAPDS,NUVMZY'}
+  - name: button_1
+    properties: {text: Task 1}
+    type: Button
+    layout_properties: {grid_position: 'YOTAJH,AWICLM'}
+  - name: button_2
+    properties: {text: 'TASK 2
+
+        '}
+    type: Button
+    layout_properties: {grid_position: 'DTWEOC,HRZSKR'}
+  - name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'ECWJLS,TVSEPI'}
+  - name: button_3
+    properties: {text: 'Login
+
+        '}
+    type: Button
+    layout_properties: {grid_position: 'ZPEXEW,SFYSKQ'}
+  - name: button_4
+    properties: {text: DEMO}
+    type: Button
+    layout_properties: {grid_position: 'KYDAIA,UJPALT'}
+  - name: button_5
+    properties: {text: 'Exit
+
+        '}
+    type: Button
+    layout_properties: {grid_position: 'IPPZRZ,XAMTWU'}

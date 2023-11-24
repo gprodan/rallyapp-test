@@ -24,7 +24,7 @@ class Form1(Form1Template):
     m2 = self.m2.text
     s = self.salary.text
     result = anvil.server.call('getExergy', currency, costGas, costOil, costElectricity, m2, s)
-    return result
+    self.text_area_1.text = result
 
   def costGas_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""

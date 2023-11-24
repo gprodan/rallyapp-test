@@ -52,15 +52,15 @@ components:
     properties: {placeholder: Cost oil in euros, text: '0'}
     type: TextBox
     layout_properties: {grid_position: 'WFIOHN,GXHAVJ ISGAKY,ORMUZX'}
-  - name: text_box_1
+  - name: costElectricity
     properties: {placeholder: Cost electricity in euros}
     type: TextBox
     layout_properties: {grid_position: 'WFIOHN,GXHAVJ ERSRHI,EWDSTO'}
-  - name: text_box_2
+  - name: m2
     properties: {}
     type: TextBox
     layout_properties: {grid_position: 'WFIOHN,GXHAVJ MSXJCV,NHKWKP'}
-  - name: text_box_3
+  - name: salary
     properties: {placeholder: salary in euros}
     type: TextBox
     layout_properties: {grid_position: 'WFIOHN,GXHAVJ GZTPEQ,BTLRWY'}

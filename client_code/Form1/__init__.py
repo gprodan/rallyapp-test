@@ -17,7 +17,14 @@ class Form1(Form1Template):
 
   def btnCalculate_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    currency = self.ddCurrency.selected_value
+    costGas = self.costGas.text
+    costOil = self.costOil.text
+    costElectricity = self.costElectricity.text
+    m2 = self.m2.text
+    s = self.salary.text
+    result = anvil.server.call('getExergy', currency, costGas, costOil, costElectricity, m2, s)
+    return result
 
   def costGas_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
